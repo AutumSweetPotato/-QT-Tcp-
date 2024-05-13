@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>660</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>490</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>660</width>
+    <height>510</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+.QLabel#label_top
+{
+	background-color: rgb(181, 181, 181);
+}
+.QPushButton
+{
+	border:one
+}
+.QPushButton#close
+{
+	
+	image: url(:/resources/img/close.png);
+}
+.QPushButton#close:hover
+{
+	
+	
+	background-color: rgb(255, 84, 57);
+}
+.QPushButton#minmize
+{
+	image: url(:/resources/img/min.png);
+}
+.QPushButton#minmize:hover
+{
+	
+	background-color: rgba(189, 189, 189,180);
+}
+.QPushButton#set
+{
+	image: url(:/resources/img/set.png);
+}
+.QPushButton#set:hover
+{
+	background-color: rgba(189, 189, 189,180);
+}
+
+</string>
+  </property>
+  <widget class="QLabel" name="label_top">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>640</width>
+     <height>190</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>190</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>190</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>200</y>
+     <width>640</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QWidget
+{
+background-color: rgb(255, 255, 255);
+}
+/*登陆按钮*/
+.QPushButton#btnLogin
+{
+	color: rgb(255, 255, 255);
+	font: 13pt &quot;Microsoft YaHei UI&quot;;
+	background-color: rgb(7, 188, 252);
+	border-radius:5px
+	
+}
+.QPushButton#btnLogin:hover
+{
+	color: rgb(255, 255, 255);
+	font: 13pt &quot;Microsoft YaHei UI&quot;;
+	background-color: rgb(29, 197, 252);
+	border-radius:4px
+	
+}
+/*注册按钮*/
+.QPushButton#btnRegister
+{
+	color: rgb(178, 178, 178);
+}
+.QPushButton#btnRegister:hover
+{
+	color: rgb(131, 131, 131);
+}
+/*找回密码按钮*/
+.QPushButton#btnRetrieve
+{
+	color: rgb(178, 178, 178);
+}
+.QPushButton#btnRetrieve:hover
+{
+	color: rgb(131, 131, 131);
+}
+/*自动登陆复选框*/
+.QCheckBox
+{
+	color: rgb(178, 178, 178);
+}
+
+.QCheckBox::indicator
+{
+	border : 2px solid rgb(205, 205, 205);
+	width:18px	;
+	height:18px;
+	border-radius : 5px;
+}
+.QCheckBox::indicator:hover
+{
+	border: 2px solid rgb(172, 172, 172);
+}
+.QCheckBox::indicator:checked
+{
+	
+	image: url(:/resources/img/checkBoxSelect.png);
+}
+QLineEdit#lineEditPassword
+{	
+	border : none;
+	border-bottom : 1px solid rgb(229, 229, 229);	
+	padding-left: 32px;
+}
+QLineEdit#lineEditPassword:hover
+{	
+	
+	border-bottom : 1px solid rgb(193, 193, 193);
+	
+}
+QLineEdit#lineEditPassword:focus
+{	
+	
+	border-bottom : 1px solid rgb(18, 183, 245);
+	
+}
+#softKey
+{
+	
+	image: url(:/resources/img/keyboard.png);
+}
+#softKey:hover
+{
+	
+	image: url(:/resources/img/keyboard2.png);
+}
+#btnQR
+{
+	
+	image: url(:/resources/img/QR1.png);
+}
+#btnQR:hover
+{
+	
+	image: url(:/resources/img/QR2.png);
+}
+#username
+{
+	border : none;
+	border-bottom : 1px solid rgb(229, 229, 229);	
+	padding-left: 32px;
+}
+#username:hover
+{
+	border-bottom : 1px solid rgb(193, 193, 193);
+}
+#username::drop-down 
+{
+	width:22px;
+	
+	image: url(:/resources/img/drow1.png);
+}
+#username::drop-down:hover
+{
+	width:22px;
+	
+	image: url(:/resources/img/drow2.png);
+}
+#username:focus
+{
+	border-bottom : 1px solid rgb(18, 183, 245);
+}
+#username::drop-down:checked
+{
+	
+	image: url(:/resources/img/drow3.png);
+}</string>
+   </property>
+   <widget class="QPushButton" name="btnRegister">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>268</y>
+      <width>73</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>注册账号</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnQR">
+    <property name="geometry">
+     <rect>
+      <x>592</x>
+      <y>254</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLogin">
+    <property name="geometry">
+     <rect>
+      <x>147</x>
+      <y>222</y>
+      <width>360</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>登陆</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxAutoLogin">
+    <property name="geometry">
+     <rect>
+      <x>148</x>
+      <y>180</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>81</width>
+      <height>22</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>999</width>
+      <height>999</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>自动登陆</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxRemember">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>288</x>
+      <y>180</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>记住密码</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRetrieve">
+    <property name="geometry">
+     <rect>
+      <x>431</x>
+      <y>182</y>
+      <width>73</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>找回密码</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="username">
+    <property name="geometry">
+     <rect>
+      <x>144</x>
+      <y>61</y>
+      <width>364</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string>QQ号码/手机/邮箱</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>2089290095</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2662607450</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1568585596</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="lineEditPassword">
+    <property name="geometry">
+     <rect>
+      <x>144</x>
+      <y>120</y>
+      <width>364</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>密码</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="passwordIcon">
+    <property name="geometry">
+     <rect>
+      <x>146</x>
+      <y>129</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/resources/img/password2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="softKey">
+    <property name="geometry">
+     <rect>
+      <x>483</x>
+      <y>132</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="usernameIcon">
+    <property name="geometry">
+     <rect>
+      <x>144</x>
+      <y>70</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>btnRegister</zorder>
+   <zorder>btnQR</zorder>
+   <zorder>btnLogin</zorder>
+   <zorder>checkBoxAutoLogin</zorder>
+   <zorder>btnRetrieve</zorder>
+   <zorder>username</zorder>
+   <zorder>lineEditPassword</zorder>
+   <zorder>passwordIcon</zorder>
+   <zorder>softKey</zorder>
+   <zorder>usernameIcon</zorder>
+   <zorder>checkBoxRemember</zorder>
+  </widget>
+  <widget class="QLabel" name="labQQLog">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>111</width>
+     <height>63</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>111</width>
+     <height>63</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>110</width>
+     <height>63</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="image.qrc">:/resources/img/QQ.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>10</y>
+     <width>111</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="set">
+      <property name="minimumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="minmize">
+      <property name="minimumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="close">
+      <property name="minimumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="profileimg">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>140</y>
+     <width>95</width>
+     <height>95</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>头像</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>minmize</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>584</x>
+     <y>16</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>close</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>622</x>
+     <y>16</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
